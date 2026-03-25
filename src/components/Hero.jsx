@@ -254,7 +254,7 @@ function Hero() {
         <div className="max-w-[1140px] mx-auto flex flex-col items-center text-center">
           {/* Heading */}
           <div ref={textRef} className="flex flex-col items-center gap-1">
-            <h1 className="text-[2.5rem] sm:text-[2rem] md:text-[2.8rem] lg:text-[2.8rem] font-bold leading-[1.08] tracking-tight text-[#1a1a1a]">
+            <h1 className="text-[2rem] sm:text-[2rem] md:text-[2.8rem] lg:text-[2.8rem] font-bold leading-[1.08] tracking-tight text-[#1a1a1a]">
               TALK.
               <br />
               FEEL.{" "}
@@ -287,8 +287,8 @@ function Hero() {
             </div>
             <img src={borderRounded} alt="" className="absolute hidden sm:block max-w-[472px] h-[50px] w-full top-0 left-1/2 -translate-x-1/2 z-0 h-full pointer-events-none" />
             <div className="flex items-center flex-wrap sm:flex-nowrap justify-center gap-3  z-1">
-              <StoreButton store="playstore"  href="https://play.google.com/store/apps/details?id=com.peacechat.app"    />
-              <StoreButton store="appstore"  href="https://apps.apple.com/in/app/peacechat/id6750180074"    />
+              <StoreButton store="playstore" href="https://play.google.com/store/apps/details?id=com.peacechat.app" />
+              <StoreButton store="appstore" href="https://apps.apple.com/in/app/peacechat/id6750180074" />
             </div>
           </div>
           <div className="relative w-full mt-6 sm:mt-8 md:mt-10">

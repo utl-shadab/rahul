@@ -303,11 +303,11 @@ function ForYou() {
       <div className="max-w-[1240px] mx-auto relative z-2">
         <div className="flex flex-col lg:flex-row justify-between items-start mb-16 gap-10 lg:gap-20">
           <div ref={titleGroupRef} className="max-w-xl">
-            <h2 className="for-you-title text-3xl sm:text-4xl md:text-5xl font-bold text-black leading-tight tracking-tight">
+            <h2 className="for-you-title text-[28px] sm:text-[40px] md:text-[42px] font-bold text-black leading-tight tracking-tight">
               PEACECHAT IS
             </h2>
             <div className="relative inline-block mt-1 sm:mt-2">
-              <span className="for-you-title text-3xl sm:text-4xl md:text-5xl font-bold text-pink">
+              <span className="for-you-title text-[28px] sm:text-[40px] md:text-[42px] font-bold text-pink">
                 FOR YOU IF...
               </span>
               <img
@@ -320,11 +320,11 @@ function ForYou() {
           </div>
 
           <div ref={textGroupRef} className="flex flex-col gap-2 max-w-xl lg:pt-2">
-            <p className="text-lg sm:text-xl md:text-2xl text-black leading-snug">
+            <p className="text-base text-black leading-snug">
               You don't need{" "}
               <span className="text-pink font-semibold">a judgement</span>.
             </p>
-            <p className="text-lg sm:text-xl md:text-2xl text-black leading-snug">
+            <p className="text-base text-black leading-snug">
               You just need{" "}
               <span className="text-pink font-semibold">
                 someone who listens and talks to you
@@ -336,7 +336,7 @@ function ForYou() {
         {/* Responsive Grid */}
         <div
           ref={cardsRef}
-          className="grid grid-cols-2 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-8"
           style={{ perspective: "800px" }}
         >
           {cards.map((card, index) => (
@@ -352,7 +352,7 @@ function ForYou() {
               <div className="mb-8">
                 <img
                   src={card.icon}
-                  alt=""  
+                  alt=""
                   className="w-20 h-20 sm:w-24 sm:h-24"
                   style={{ willChange: "transform" }}
                 />
