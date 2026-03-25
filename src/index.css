@@ -233,3 +233,25 @@ body {
   transform: scale(1.02) translateY(-6px) rotate(-2deg);
   box-shadow: 0 18px 38px rgba(0, 0, 0, 0.18);
 }
+
+/* Lenis Smooth Scroll */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
