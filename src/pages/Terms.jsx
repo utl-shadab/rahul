@@ -10,21 +10,34 @@ function Terms() {
       downloadName="PEACECHAT-Terms"
     >
       <p>
-        The embedded PDF is the exact file you provided. To zoom, print, or
-        search the document, open it in a new tab or download it with the
-        buttons to the right.
+        The embedded PDF represents the exact document as provided. For enhanced
+        functionality such as zooming, searching, or printing, you may open it
+        in a new tab or download a copy using the available options.
       </p>
-      <p className="font-semibold text-[#1B164C]">
-        Quick pointers
-      </p>
+
+      <p className="font-semibold text-[#1B164C]">Usage Guidelines</p>
+
       <ul className="space-y-3 list-disc list-inside text-sm md:text-base leading-relaxed text-[#201A4B]">
-        <li>The PDF viewer adapts to screen size; rotate your phone for a wider view if needed.</li>
-        <li>Share the public URL <span className="font-semibold text-[#6B296D]">/terms</span> whenever you reference these terms.</li>
-        <li>If revisions are required later, replace the PDF and this route will keep the same structure.</li>
+        <li>
+          The PDF viewer is responsive and adjusts to different screen sizes;
+          for an improved viewing experience on mobile devices, consider
+          rotating your screen.
+        </li>
+        <li>
+          Use the public route{" "}
+          <span className="font-semibold text-[#6B296D]">/terms</span> to
+          reference or share this document when required.
+        </li>
+        <li>
+          In case of future updates or revisions, the PDF can be replaced
+          without affecting the current page structure or layout.
+        </li>
       </ul>
+
       <p>
-        For any questions about these terms, use the contact link in the footer
-        and we will help you route feedback to the right place.
+        For any inquiries regarding these terms, please use the contact link
+        available in the footer. Our team will ensure your query is directed to
+        the appropriate channel.
       </p>
     </LegalLayout>
   );

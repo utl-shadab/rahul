@@ -10,20 +10,36 @@ function PrivacyPolicy() {
       downloadName="PEACECHAT-Privacy-Policy"
     >
       <p>
-        The PDF viewer on the right shows the exact document you supplied. If
-        you need to zoom or search, open it in a new tab or download a copy.
+        The PDF viewer on the right displays the official and signed version of
+        the document exactly as provided. For enhanced readability, you may
+        choose to open it in a new tab or download a copy for offline access.
       </p>
-      <p className="font-semibold text-[#1B164C]">
-        How to use this page
-      </p>
+
+      <p className="font-semibold text-[#1B164C]">Instructions for Use</p>
+
       <ul className="space-y-3 list-disc list-inside text-sm md:text-base leading-relaxed text-[#201A4B]">
-        <li>Read the embedded PDF directly or open it in a separate tab for full-screen viewing.</li>
-        <li>Use the download button to keep a local copy for records or sharing.</li>
-        <li>Link back to this route anytime via <span className="font-semibold text-[#6B296D]">/privacy</span>.</li>
+        <li>
+          Review the document directly within the embedded viewer for quick
+          access.
+        </li>
+        <li>
+          Open the PDF in a new tab to utilize full-screen viewing, zoom, and
+          search features.
+        </li>
+        <li>
+          Download the file to retain a local copy for record-keeping or sharing
+          purposes.
+        </li>
+        <li>
+          Access this page anytime via the route{" "}
+          <span className="font-semibold text-[#6B296D]">/privacy</span>.
+        </li>
       </ul>
+
       <p>
-        If you ever need updates or a different version posted, share the new PDF
-        and we will swap it in while preserving this layout.
+        This document represents the most recent approved version. In case of
+        any updates or revisions, a new PDF can be provided and will be
+        seamlessly replaced while preserving the current layout and structure.
       </p>
     </LegalLayout>
   );
