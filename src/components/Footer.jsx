@@ -1,4 +1,5 @@
 import React, { useLayoutEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import StoreButton from "./Appstorebutton.jsx";
@@ -19,7 +20,6 @@ function Footer() {
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      // Parallax for Background
       gsap.to(bgRef.current, {
         y: "20%",
         ease: "none",
@@ -31,7 +31,6 @@ function Footer() {
         },
       });
 
-      // Parallax for Left People
       gsap.fromTo(
         leftPeopleRef.current,
         { y: "15%", x: "-5%" },
@@ -48,7 +47,6 @@ function Footer() {
         }
       );
 
-      // Parallax for Right People
       gsap.fromTo(
         rightPeopleRef.current,
         { y: "10%", x: "5%" },
@@ -65,7 +63,6 @@ function Footer() {
         }
       );
 
-      // Cinematic content fade-up
       gsap.from(contentRef.current.children, {
         y: 60,
         opacity: 0,
@@ -78,7 +75,6 @@ function Footer() {
         },
       });
 
-      // Subtle float animation for people
       gsap.to([leftPeopleRef.current, rightPeopleRef.current], {
         y: "+=15",
         duration: 3,
@@ -93,9 +89,7 @@ function Footer() {
 
   return (
     <footer className="w-full flex flex-col overflow-hidden" ref={containerRef}>
-
       <div className="relative w-full overflow-hidden bg-[#BD96FF] min-h-[500px] md:min-h-[650px] flex items-center justify-center py-20">
-
         <div
           ref={bgRef}
           className="absolute inset-0 w-full h-[120%] -top-[10%] pointer-events-none"
@@ -124,8 +118,6 @@ function Footer() {
           ref={contentRef}
           className="relative z-20 flex flex-col items-center justify-center text-center px-6 max-w-4xl"
         >
-
-
           <h2 className="text-[clamp(1.5rem,7vw,2.5rem)] font-black text-[#6B296D] mb-6 tracking-tight leading-[0.95] drop-shadow-sm">
             You deserve to feel heard.
           </h2>
@@ -150,31 +142,44 @@ function Footer() {
       <div className="bg-[#1B164C] py-5 px-6 md:px-10 relative z-30">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
-
-            {/* Copyright */}
             <div className="order-3 md:order-1 flex flex-col items-center md:items-start gap-2">
               <p className="text-white/60 text-sm font-light tracking-wide">
-                Peacechat © 2026. All rights reserved.
+                Peacechat &copy; 2026. All rights reserved.
               </p>
             </div>
 
-            {/* Logo Center */}
             <div className="order-1 md:order-2 flex flex-col items-center gap-4">
               <div className="relative group cursor-pointer">
                 <div className="absolute -inset-4 bg-white/5 rounded-full blur-xl scale-75 group-hover:scale-100 transition-transform duration-500" />
-                <img src={logo} alt="Peacechat" className="relative h-10 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-110" />
+                <img
+                  src={logo}
+                  alt="Peacechat"
+                  className="relative h-10 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
+                />
               </div>
             </div>
 
-            {/* Nav Links */}
-            <nav className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-white text-sm   order-2 md:order-3">
-              <a href="#" className="hover:text-white transition-all duration-300 hover:tracking-[0.2em]">Privacy</a>
-              <a href="#" className="hover:text-white transition-all duration-300 hover:tracking-[0.2em]">Terms</a>
-              <a href="#" className="hover:text-white transition-all duration-300 hover:tracking-[0.2em]">Contact</a>
+            <nav className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-white text-sm order-2 md:order-3">
+              <Link
+                to="/privacy"
+                className="hover:text-white transition-all duration-300 hover:tracking-[0.2em]"
+              >
+                Privacy
+              </Link>
+              <Link
+                to="/terms"
+                className="hover:text-white transition-all duration-300 hover:tracking-[0.2em]"
+              >
+                Terms
+              </Link>
+              <Link
+                to="/contact"
+                className="hover:text-white transition-all duration-300 hover:tracking-[0.2em]"
+              >
+                Contact
+              </Link>
             </nav>
           </div>
-
-
         </div>
       </div>
     </footer>
