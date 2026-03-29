@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
 import Contact from "./pages/Contact";
+import Delete from "./pages/Delete";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/delete" element={<Delete />} />
         </Routes>
         <Footer />
       </div>
